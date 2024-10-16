@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="image-container">
+            <img src="../img/logo/Logo-text.png" alt="Descriptive Image">
+        </div>
+        <div class="form-container">  
+            <h2 class="login">Login</h2>
+            <!-- <% if (typeof error !== 'undefined') { %>
+                <p style="color: red;"><%= error %></p>
+            <% } %> -->
+            <form action="/login" method="post"> 
+                <div class="form-group">
+                    <label for="name">Username</label>
+                    <input type="text" id="name" name="username" placeholder="Enter your Username" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" placeholder="Enter your Password" required>
+                </div>
+                
+                <button type="submit" class="submit-btn">Login</button>
+                <% if (typeof error !== 'undefined') { %>
+                    <p style="color: red;"><%= error %></p>
+                <% } %>
+            </form>
+            <p>Don't have an account? <a href="/signup">Sign up</a> now!</p>
+        </div>
+    </div>
+</body>
+</html>
