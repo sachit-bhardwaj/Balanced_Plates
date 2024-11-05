@@ -3,6 +3,21 @@
     "bcrypt": "^5.1.1",
     "ejs": "^3.1.10",
     "express": "^4.19.2",
-    "mongoose": "^8.4.0"
+    "mongoose": "^8.4.0",
+    "homepage": "https://github.com/sachit-bhardwaj/Balanced_Plates.git"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "run": " node src/index.js",
+    "predeploy": "npm run build",
+  "deploy": "gh-pages -d build"
+
+
+  },
+  "devDependencies": {
+    "gh-pages": "^6.2.0"
   }
 }
